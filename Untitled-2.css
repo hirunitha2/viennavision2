@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vienna Vision | Optical Care in Sri Lanka</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Vienna Vision is a trusted optical care provider in Sri Lanka offering eye testing, prescription glasses, contact lenses, and professional eye care services." />
+  <meta name="keywords" content="Vienna Vision, Optical Shop Sri Lanka, Eye Testing, Glasses, Contact Lenses, Nittambuwa, Mirigama, Ja-Ela, Giriulla" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#e31e24; /* Vienna Vision Red */
+      --accent:#ffffff; /* White */
+      --dark:#000000; /* Black */
+      --light:#f5f5f5; /* Light Grey */
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Open Sans',sans-serif;
+      background:#fff;
+      color:#333;
+      line-height:1.6;
+    }
+    h1,h2,h3{font-family:'Poppins',sans-serif;}
+
+    header{
+      position:sticky;top:0;z-index:1000;
+      background:#ffffff;
+      box-shadow:0 4px 20px rgba(0,0,0,.12);
+    }
+    .nav{
+      max-width:1200px;margin:auto;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:15px 20px;
+    }
+    .logo{font-size:24px;font-weight:700;color:var(--primary);}
+    nav a{
+      margin-left:20px;
+      text-decoration:none;color:#000;font-weight:600;
+    }
+    nav a:hover{color:var(--primary);}
+    nav a:hover{color:var(--primary);}
+
+    .lang-toggle{
+      margin-left:20px;
+      background:var(--primary);color:#fff;
+      border:none;padding:6px 12px;border-radius:20px;cursor:pointer;
+    }
+
+    .hero{
+      height:90vh;
+      background:linear-gradient(rgba(227,30,36,.75),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5');
+      background-size:cover;background-position:center;
+      display:flex;align-items:center;
+    }
+    .hero-content{
+      max-width:1200px;margin:auto;color:#fff;padding:20px;
+      animation:fadeUp 1.2s ease;
+    }
+    .hero h1{font-size:48px;margin-bottom:10px;}
+    .hero p{font-size:20px;max-width:600px;}
+
+    section{padding:80px 20px;}
+    .container{max-width:1200px;margin:auto;}
+
+    .services,.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+    .card{
+      background:#fff;border-radius:16px;padding:30px;
+      box-shadow:0 12px 35px rgba(0,0,0,.12);
+      border-top:5px solid var(--primary);
+      transition:.3s;
+    }
+    .card:hover{transform:translateY(-10px);}
+    .card:hover{transform:translateY(-8px);}
+
+    .cta{
+      background:linear-gradient(135deg,var(--primary),#b30000);
+      color:#fff;text-align:center;
+      padding:80px 20px;
+    }
+
+    form{
+      max-width:600px;margin:auto;
+      background:#fff;padding:30px;border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,.1);
+    }
+    input,select,textarea{
+      width:100%;padding:12px;margin-bottom:15px;
+      border-radius:8px;border:1px solid #ccc;
+    }
+    button{
+      background:var(--primary);color:#fff;border:none;
+      padding:12px 26px;border-radius:30px;cursor:pointer;
+      font-size:16px;font-weight:600;
+    }
+    button:hover{background:#b30000;}
+    button:hover{background:#093a5a;}
+
+    footer{
+      background:#111;color:#ccc;padding:40px 20px;
+    }
+    footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}
+    }
+
+    iframe{width:100%;border-radius:12px;border:0;height:220px;}
+
+    @media(max-width:768px){.hero h1{font-size:34px;}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo"><img src="logo.png" alt="Vienna Vision Logo" style="height:48px;"></div>
+    <nav>
+      <a href="#home" data-en="Home" data-si="මුල් පිටුව">Home</a>
+      <a href="#services" data-en="Services" data-si="සේවාවන්">Services</a>
+      <a href="#branches" data-en="Branches" data-si="ශාඛා">Branches</a>
+      <a href="#appointment" data-en="Appointment" data-si="වේලාවක් වෙන්කරන්න">Appointment</a>
+      <button class="lang-toggle" onclick="toggleLang()">සිංහල</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h3 data-en="See the world with a clear ::view-transition-old." data-si="පැහැදිලි දැක්මකින් ලෝකය දකින්න">See the world with a clear vision.</h3>
+    <p data-en="Professional & affordable eye care across Sri Lanka." data-si="ශ්‍රී ලංකාව පුරා විශ්වාසදායක සහ මිලට සුදුසු දෘෂ්ටි සත්කාර.">
+      Professional & affordable eye care across Sri Lanka.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 data-en="Our Services" data-si="අපගේ සේවාවන්">Our Services</h2>
+    <div class="services">
+      <div class="card">Eye Testing</div>
+      <div class="card">Prescription Glasses</div>
+      <div class="card">Contact Lenses</div>
+      <div class="card">Sunglasses & Protection</div>
+    </div>
+  </div>
+</section>
+
+<section id="branches" style="background:var(--light)">
+  <div class="container">
+    <h2 data-en="Our Branches" data-si="අපගේ ශාඛා">Our Branches</h2>
+    <div class="branches">
+      <div class="card"><h3>Mirigama</h3><iframe src="https://maps.google.com/maps?q=zH1m7dVfYttgyxE87&output=embed"></iframe></div>
+      <div class="card"><h3>Nittambuwa</h3><iframe src="https://maps.google.com/maps?q=3ntjwse5o7aG9n317&output=embed"></iframe></div>
+      <div class="card"><h3>Giriulla</h3><iframe src="https://maps.google.com/maps?q=E4BTbjDJp62fbiim6&output=embed"></iframe></div>
+      <div class="card"><h3>Ja-Ela</h3><iframe src="https://maps.google.com/maps?q=d9UZwJFpH5m38rmk7&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section id="appointment" class="cta">
+  <h2 data-en="Book an Appointment" data-si="වේලාවක් වෙන්කරන්න">Book an Appointment</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <select required>
+      <option>Select Branch</option>
+      <option>Mirigama</option>
+      <option>Nittambuwa</option>
+      <option>Giriulla</option>
+      <option>Ja-Ela</option>
+      <option>JR Hospital Ja-Ela</option>
+    </select>
+    <input type="date" required />
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <h3>Vienna Vision</h3>
+      <p>Professional Optical Care in Sri Lanka</p>
+    </div>
+    <div>
+      <p>Email: yohan@gmail.com</p>
+      <p>Phone: +94 77 XXX XXXX</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let isSinhala=false;
+  function toggleLang(){
+    isSinhala=!isSinhala;
+    document.querySelectorAll('[data-en]').forEach(el=>{
+      el.textContent=isSinhala?el.dataset.si:el.dataset.en;
+    });
+    document.querySelector('.lang-toggle').textContent=isSinhala?'EN':'සිංහල';
+  }
+</script>
+
+</body>
+</html>
